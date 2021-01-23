@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto",sans-serif;
+}
+
+header{
+    position: fixed;
+    background: #333;
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+}
+ .left-area h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 900;
+    margin: 0;
+
+ }  
+ .left-area span{
+    color: rgb(20, 180, 41);
+ }
+.logout-btn {
+     text-decoration: none;
+     float: right;
+     color: #fff;
+     margin-top: -25px;
+     margin-right: 50px;
+     background: green;
+     padding: 8px 30px 8px 30px;
+     font-size: 19px;
+     border: 2px solid red;
+     border-radius: 25px;
+     font-weight: 600;
+     transition: .5s;
+
+
+}
+.logout-btn:hover{
+  cursor: pointer;
+  background: blue;
+  color: rgb(102, 163, 45);
+  /*border: 2px solid rgb(20, 180, 41);*/
+  border-bottom:3px ;
+  border-top:3px ;
+  border-right-width: 4px;
+  border-right-color: rgb(224, 21, 21);
+}
+.sidebar{
+    position: fixed;
+    float: left;
+    width: 250px;
+    margin-top: 70px;
+    padding-top: 33px;
+    left: 0;
+    height: 100%;
+    background: #333;
+    transition: .5s;
+    transition-property: left;
+}
+.sidebar .ozimimage{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+.sidebar h4{
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+}
+
+
+.sidebar a{
+    color: #fff;
+    display:block;
+    padding: 16px 10px 10px 50px;
+    font-size: 25px;
+    width: 100%;
+    line-height: 60px;
+    padding-left: 40px;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: .3s;
+}
+.sidebar a:hover{
+    border:5px solid red;
+    border-bottom: 2px solid chocolate;
+    border-top: 3px solid darkmagenta;
+    border-right: 6px solid darkturquoise;
+    color: red;
+
+
+}
+
+
+.sidebar a i{
+    padding-right: 10px;
+}
+label #sibebar-btn{
+    color: #fff;
+    font-size: 24px;
+    z-index: 1;
+    position: fixed;
+    left: 220px;
+    transition: .5s;
+    transition-property:color;
+  
+}
+label #sibebar-btn:hover{
+    color: rgb(9, 71, 95);
+}
+
+#check:checked~.sidebar{
+    left: -200px;
+}
+
+#check:checked~.sidebar a span{
+    display: none;
+}
+#check:checked~.sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+
+}
+#check{ 
+    display: none;
+}
+.content{
+    margin-left: 250px;
+    background: url('../image/kkkk.png');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: .5s;
+}
+#check:checked~.content{
+    margin-left: 50px;
+}
+.mativat{
+    text-align: center;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-transform: uppercase;
+
+}
